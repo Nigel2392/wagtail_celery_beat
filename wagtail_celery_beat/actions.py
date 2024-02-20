@@ -23,7 +23,6 @@ WAGTAIL_CELERY_BEAT_ACTIONS = lambda _: [
             handler=toggle_tasks,
             icon="resubmit",
             permissions=[
-                "wagtail_celery_beat.toggle_periodic_task",
                 "wagtail_celery_beat.enable_periodic_task",
                 "wagtail_celery_beat.disable_periodic_task",
             ]
@@ -34,7 +33,6 @@ WAGTAIL_CELERY_BEAT_ACTIONS = lambda _: [
             icon="circle-check",
             permissions=[
                 "wagtail_celery_beat.enable_periodic_task",
-                "wagtail_celery_beat.toggle_periodic_task",
             ]
         ),
         Action(
@@ -43,7 +41,6 @@ WAGTAIL_CELERY_BEAT_ACTIONS = lambda _: [
             icon="error",
             permissions=[
                 "wagtail_celery_beat.disable_periodic_task",
-                "wagtail_celery_beat.toggle_periodic_task",
             ]
         ),
         #Action(
