@@ -1,0 +1,67 @@
+{% extends "wagtailadmin/base.html" %}
+{% load static i18n wagtailadmin_tags %}
+{% block titletag %}{% translate "Periodic Task Actions" %}{% endblock %}
+
+{% block extra_css %}
+    {{block.super}}
+    <link rel="stylesheet" href="{% static 'wagtail_celery_beat/css/wagtail_celery_beat.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <form 
+        action="{% url 'wagtail_celery_beat:index' %}"
+        method="POST"
+        class="container-lg">
+
+        <div id="wcb_form_heading">
+            <h1>Periodic Task Actions</h1>
+        </div>
+
+        {% csrf_token %}
+    
+        <div class="wcb-tasks">
+
+            {% include "wagtail_celery_beat/partials/index_table.html" %}
+
+        </div>
+
+        <div class="wcb-tasks-buttons">
+            <div class="wcb-tasks-actions">
+                {% for action in actions %}
+                    <div class="wcb-action">
+                        <button 
+                            disabled="true"
+                            type="submit" 
+                            class="button wcb-action-btn" 
+                            name="periodic_task_action"
+                            value="{{ action.id }}">
+                            {% if action.icon %}
+                                {% icon name=action.icon %}
+                            {% endif %}
+                            <span>{{ action.label }}</span>
+                        </button>
+                    </div>
+                {% endfor %}
+                <div class="wcb-action">
+                    <a 
+                        {% url 'wagtail_celery_beat:index' as next_url %}
+                        href="{% url add_task_url %}?next={{next_url|urlencode}}"
+                        class="button wcb-action-btn">
+                        {% translate "Add Periodic Task" %}
+                    </a>
+                </div>
+                <div class="wcb-action-selected-count">
+                    <strong id="wcb_selected_count">0</strong>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+{% endblock %}
+
+{% block extra_js %}
+    {{ block.super }}
+    <script src="{% static 'wagtail_celery_beat/js/wagtail_celery_beat.js' %}"></script>
+{% endblock %}

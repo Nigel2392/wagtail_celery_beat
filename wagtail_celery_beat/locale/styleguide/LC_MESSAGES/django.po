@@ -1,0 +1,304 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-05 23:58+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: .\application\core\apps\wagtail_celery_beat\actions.py:91
+msgid "No tasks were run, does the task still exist?"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\actions.py:96
+#: .\application\core\apps\wagtail_celery_beat\actions.py:112
+msgid "was,were"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\actions.py:93
+#, python-brace-format
+msgid "{0} task{1} {2} successfully run"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\actions.py:105
+#, python-brace-format
+msgid "No tasks were {0}, does the task still exist?"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\actions.py:109
+#, python-brace-format
+msgid "{0} task{1} {2} successfully {3}"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:96
+msgid "Task (registered)"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:100
+msgid "Task (custom)"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:111
+msgid "Need name of task"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:117
+msgid "Only one can be set, in expires and expire_seconds"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:127
+#, python-format
+msgid "Unable to parse JSON: %s"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:159
+msgid "Periodic Task"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:163
+msgid "Start date and time when the task should start running."
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:165
+msgid "Interval Schedule to run the task on."
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:166
+msgid "Crontab Schedule to run the task on."
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:167
+msgid ""
+"Solar Event Schedule to run the task on, this will be executed each time the "
+"event occurs."
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:168
+msgid "Periodically Scheduled"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:170
+msgid ""
+"Clocked Schedule to run the task on, this will be executed only once at the "
+"specified time."
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:171
+msgid "Scheduled for specific date/time"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:174
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:366
+msgid "Schedule"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:179
+msgid "Arguments"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:185
+msgid "Execution"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:189
+msgid "Expiration"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:196
+msgid "Advanced Options"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:197
+msgid "Execution Options"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:230
+msgid "Task Results"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:251
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:290
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:356
+msgid "Task"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:255
+msgid "Parameters"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:262
+msgid "Result"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:270
+msgid "Group Results"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\admin.py:342
+msgid "Celery"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\admin.py:27
+msgid "Items"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\admin.py:33
+msgid "Processors"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\admin.py:40
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:304
+msgid "Run Schedules"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\admin.py:76
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:525
+msgid "Queue"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:155
+msgid "Queue Item"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:163
+msgid "Execution Schedule"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:171
+msgid "Processed"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:177
+msgid "Content Type"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:191
+msgid "Queue Processor"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:192
+msgid "Queue Processors"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:228
+msgid "Instance ID"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:241
+msgid "Singleton Queue Processor"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:242
+msgid "Singleton Queue Processors"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:303
+msgid "Run Schedule"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:380
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:381
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:505
+msgid "Settings"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:394
+#, python-format
+msgid "The interval must be at least %(interval)s seconds"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:514
+msgid "Processed At"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\generic_queue\models.py:526
+msgid "Queues"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\models.py:7
+msgid "Wagtail Celery Beat Permission"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\models.py:8
+msgid "Wagtail Celery Beat Permissions"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\models.py:13
+msgid "Can run periodic tasks"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\models.py:14
+msgid "Can toggle periodic tasks"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\models.py:15
+msgid "Can enable periodic tasks"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\models.py:16
+msgid "Can disable periodic tasks"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\templates\wagtail_celery_beat\bulk_actions\confirm_bulk_toggle_tasks.html:4
+#, python-format
+msgid "Update 1 item"
+msgid_plural "Update %(counter)s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\application\core\apps\wagtail_celery_beat\templates\wagtail_celery_beat\bulk_actions\confirm_bulk_toggle_tasks.html:7
+msgid "Update"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\templates\wagtail_celery_beat\bulk_actions\confirm_bulk_toggle_tasks.html:13
+msgid "Are you sure you want to update these items?"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\templates\wagtail_celery_beat\bulk_actions\confirm_bulk_toggle_tasks.html:26
+msgid "You don't have permission to update this item"
+msgid_plural "You don't have permission to update these items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\application\core\apps\wagtail_celery_beat\templates\wagtail_celery_beat\bulk_actions\confirm_bulk_toggle_tasks.html:32
+msgid "Yes, update"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\templates\wagtail_celery_beat\bulk_actions\confirm_bulk_toggle_tasks.html:33
+msgid "No, don't update"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\templates\wagtail_celery_beat\celery_admin\index.html:3
+#: .\application\core\apps\wagtail_celery_beat\wagtail_hooks.py:35
+msgid "Periodic Task Actions"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\templates\wagtail_celery_beat\celery_admin\index.html:51
+msgid "Add Periodic Task"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\templates\wagtail_celery_beat\partials\help_scheduler.html:5
+msgid ""
+"Periodic tasks won't be dispatched unless you set the "
+"<code>CELERY_BEAT_SCHEDULER</code> setting to <code>djcelery.schedulers."
+"DatabaseScheduler</code>,or specify it using the <code>-S</code> option to "
+"celerybeat</ul>"
+msgstr ""
+
+#: .\application\core\apps\wagtail_celery_beat\templates\wagtail_celery_beat\partials\help_schedules.html:2
+msgid ""
+"You may only use on of the following schedules, multiple selections will not "
+"be valid."
+msgstr ""

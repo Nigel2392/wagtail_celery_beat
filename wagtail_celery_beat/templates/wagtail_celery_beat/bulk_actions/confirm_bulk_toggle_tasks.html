@@ -1,0 +1,38 @@
+{% extends 'wagtailadmin/bulk_actions/confirmation/base.html' %}
+{% load i18n wagtailadmin_tags %}
+
+{% block titletag %}{% blocktranslate trimmed count counter=items|length %}Update 1 item{% plural %}Update {{ counter }} items{% endblocktranslate %}{% endblock %}
+
+{% block header %}
+    {% trans "Update" as del_str %}
+    {% include "wagtailadmin/shared/header.html" with title=del_str icon="doc-empty-inverse" %}
+{% endblock header %}
+
+{% block items_with_access %}
+        {% if items %}
+        <p>{% trans "Are you sure you want to update these items?" %}</p>
+        <ul>
+            {% for item in items %}
+            <li>
+                <a href="" target="_blank" rel="noreferrer">{{ item.item.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+{% endblock items_with_access %}
+
+{% block items_with_no_access %}
+
+{% blocktranslate trimmed asvar no_access_msg count counter=items_with_no_access|length %}You don't have permission to update this item{% plural %}You don't have permission to update these items{% endblocktranslate %}
+
+{% endblock items_with_no_access %}
+
+{% block form_section %}
+{% if items %}
+    {% trans 'Yes, update' as action_button_text %}
+    {% trans "No, don't update" as no_action_button_text %}
+    {% include 'wagtailadmin/bulk_actions/confirmation/form.html' with action_button_class="button-secondary" %}
+{% else %}
+    {% include 'wagtailadmin/bulk_actions/confirmation/go_back.html' %}
+{% endif %}
+{% endblock form_section %}

@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+recursive-include wagtail_celery_beat/static *
+recursive-include wagtail_celery_beat/templates *
+recursive-include wagtail_celery_beat/locale *
+recursive-include wagtail_celery_beat/migrations *
+recursive-include wagtail_celery_beat/templatetags *

@@ -1,0 +1,41 @@
+{% load wagtailadmin_tags %}
+<table class="wcb-task-table" id="wcb_task_table">
+    <thead>
+        <tr>
+            <th><input type="checkbox" id="wcb_select_all"></th>
+            <th>Name</th>
+            <th>Task</th>
+            <th>Enabled</th>
+            <th>Schedule</th>
+            <th>Total Run Count</th>
+            <th>Last Run At</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for task in tasks %}
+            <tr>
+                <td><input type="checkbox" name="selected_for_task" value="{{task.pk}}" id="select_for_task_{{task.pk}}"></td>
+                <td>
+                    <strong>
+                        <a href="{% url edit_task_url task.pk %}">
+                            {{ task.name }}
+                        </a>
+                    </strong>
+                </td>
+                <td>{{ task.task }}</td>
+                <td>
+                    {% if task.enabled %}
+                        {% icon name="circle-check" classname="task-enabled-icon enabled" %}
+                    {% else %}
+                        {% icon name="circle-xmark" classname="task-enabled-icon disabled" %}
+                    {% endif %}
+                </td>
+                <td>{{ task.schedule }}</td>
+                <td>{{ task.total_run_count }}</td>
+                <td>{% if task.last_run_at %}{{task.last_run_at}}{%else%}-{%endif%}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
